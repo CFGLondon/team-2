@@ -1,0 +1,11 @@
+CREATE TABLE `User` (
+  email     varchar(255) NOT NULL, 
+  firstName varchar(255) NOT NULL, 
+  lastName  varchar(255) NOT NULL, 
+  telNo     varchar(12) NOT NULL, 
+  dob       date NOT NULL, 
+  street    varchar(255) NOT NULL, 
+  number    int(5) NOT NULL, 
+  city      varchar(255) NOT NULL, 
+  postcode  varchar(8) NOT NULL, 
+  PRIMARY KEY (email));
