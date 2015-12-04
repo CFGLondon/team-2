@@ -6,5 +6,5 @@
 Craig Morrison
 Aidan O'Grady
 Grant Toghill
-Rohit 
-Jonas
+Rohit Sharma
+Jonas Halling
