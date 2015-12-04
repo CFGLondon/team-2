@@ -8,4 +8,5 @@ CREATE TABLE `User` (
   number    int(5) NOT NULL, 
   city      varchar(255) NOT NULL, 
   postcode  varchar(8) NOT NULL, 
+  password  varchar(255) NOT NULL, 
   PRIMARY KEY (email));
