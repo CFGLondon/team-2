@@ -3,7 +3,6 @@
 Server: ec2-54-170-126-133.eu-west-1.compute.amazonaws.com
 
 ###Team Members:
-<<<<<<< HEAD
 - Craig Morrison
 - Aidan O'Grady
 - Grant Toghill
