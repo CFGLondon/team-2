@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Age Connect</title>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css" type="text/css">
 </head>
 <body>
-<nav>
-    <div class="blue nav-wrapper">
-        <a href="#!" class="brand-logo">Age Connect</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="login.html">Sign In</a></li>
-            <li><a href="register.html">Register</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-            <li><a href="login.html">Sign In</a></li>
-            <li><a href="register.html">Register</a></li>
-        </ul>
-    </div>
-</nav>
+<header>
+    <nav class="light-blue" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Age Connect</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
 
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+</header>
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
