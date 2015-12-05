@@ -1,12 +1,14 @@
-CREATE TABLE `User` (
-  email     varchar(255) NOT NULL, 
-  firstName varchar(255) NOT NULL, 
-  lastName  varchar(255) NOT NULL, 
-  telNo     varchar(12) NOT NULL, 
-  dob       date NOT NULL, 
-  street    varchar(255) NOT NULL, 
-  number    int(5) NOT NULL, 
-  city      varchar(255) NOT NULL, 
-  postcode  varchar(8) NOT NULL, 
-  password  varchar(255) NOT NULL, 
-  PRIMARY KEY (email));
+CREATE TABLE Availability (id int(10) NOT NULL AUTO_INCREMENT, `available dates` varchar(255) NOT NULL, PRIMARY KEY (id));
+CREATE TABLE DatesAvail (Personid int(11) NOT NULL, Availabilityid int(10) NOT NULL, PRIMARY KEY (Personid, Availabilityid));
+CREATE TABLE Dislike (Personid int(11) NOT NULL, Hobbyid int(11) NOT NULL, dislike varchar(255) NOT NULL, PRIMARY KEY (Personid, Hobbyid));
+CREATE TABLE Hobby (id int(11) NOT NULL AUTO_INCREMENT, HobbyDesc varchar(255) NOT NULL, PRIMARY KEY (id));
+CREATE TABLE Person (id int(11) NOT NULL AUTO_INCREMENT, title varchar(255) NOT NULL, fName varchar(255) NOT NULL, sName varchar(255) NOT NULL, gender varchar(255) NOT NULL, dob date NOT NULL, phoneNo varchar(11) NOT NULL, isElderly int(1) NOT NULL, uncomfortable varchar(255), personality varchar(255), PRIMARY KEY (id));
+CREATE TABLE PersonHobby (Hobbyid int(11) NOT NULL, Personid int(11) NOT NULL, PRIMARY KEY (Hobbyid, Personid));
+CREATE TABLE Volunteer (Personid int(11) NOT NULL, email int(11) NOT NULL UNIQUE, password varchar(255) NOT NULL, addr1 varchar(255) NOT NULL, addr2 varchar(255), town varchar(255) NOT NULL, postcode varchar(8) NOT NULL, isValidated int(1) NOT NULL, expOfElderly varchar(255) NOT NULL, GoalsSet int(1) NOT NULL, JoinReason varchar(255) NOT NULL, PRIMARY KEY (Personid));
+ALTER TABLE Volunteer ADD INDEX FKVolunteer977448 (Personid), ADD CONSTRAINT FKVolunteer977448 FOREIGN KEY (Personid) REFERENCES Person (id);
+ALTER TABLE PersonHobby ADD INDEX FKPersonHobb140982 (Personid), ADD CONSTRAINT FKPersonHobb140982 FOREIGN KEY (Personid) REFERENCES Person (id);
+ALTER TABLE PersonHobby ADD INDEX FKPersonHobb34378 (Hobbyid), ADD CONSTRAINT FKPersonHobb34378 FOREIGN KEY (Hobbyid) REFERENCES Hobby (id);
+ALTER TABLE Dislike ADD INDEX FKDislike260213 (Personid), ADD CONSTRAINT FKDislike260213 FOREIGN KEY (Personid) REFERENCES Person (id);
+ALTER TABLE Dislike ADD INDEX FKDislike366817 (Hobbyid), ADD CONSTRAINT FKDislike366817 FOREIGN KEY (Hobbyid) REFERENCES Hobby (id);
+ALTER TABLE DatesAvail ADD INDEX FKDatesAvail612020 (Personid), ADD CONSTRAINT FKDatesAvail612020 FOREIGN KEY (Personid) REFERENCES Person (id);
+ALTER TABLE DatesAvail ADD INDEX FKDatesAvail755301 (Availabilityid), ADD CONSTRAINT FKDatesAvail755301 FOREIGN KEY (Availabilityid) REFERENCES Availability (id);
