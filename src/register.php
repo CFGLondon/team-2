@@ -54,7 +54,7 @@
                 </div>
                 <div class="row">
                     <div class="input-field col s6">
-                        <input name="telephone" type="email" class="validate">
+                        <input name="telephone" type="tel" class="validate">
                         <label for="telephone">Telephone</label>
                     </div>
                     <div class="input-field col s6">
