@@ -1,32 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Age Connect</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/materialize.min.css" type="text/css">
+    <?php
+        include "php/include/head.php"
+    ?>
 </head>
 <body>
 <header>
     <nav class="light-blue" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Log In</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="login.html">Log In</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="#">Why?</a></li>
-            </ul>
-            <ul id="nav-mobile" class="side-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="login.html">Log In</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="#">Why?</a></li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Log in</a>
+            <?php include "php/include/nav.php"?>
         </div>
     </nav>
 </header>
