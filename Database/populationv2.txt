@@ -1,0 +1,7 @@
+INSERT INTO Availability(id, `available dates`) VALUES ("", "");
+INSERT INTO DatesAvail(Personid, Availabilityid) VALUES ("", "");
+INSERT INTO Dislike(Personid, Hobbyid, dislike) VALUES ("", "", "");
+INSERT INTO Hobby(id, HobbyDesc) VALUES ("", "");
+INSERT INTO Person(id, title, fName, sName, gender, dob, phoneNo, isElderly, uncomfortable, personality) VALUES ("", "", "", "", "", "", "", "", "", "");
+INSERT INTO PersonHobby(Hobbyid, Personid) VALUES ("", "");
+INSERT INTO Volunteer(Personid, email, password, addr1, addr2, town, postcode, isValidated, expOfElderly, GoalsSet, JoinReason) VALUES ("", "", "", "", "", "", "", "", "", "", "");
