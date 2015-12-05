@@ -23,13 +23,11 @@ if (mysqli_query($dbhandle, $newPerson)) {
 
 $newPersonID = mysqli_query($dbhandle, "SELECT MAX(id) FROM Person");
 
-while ($row = $result->fetch_assoc()) {
-	echo $row['id']."<br>";
+while ($row = $newPersonID->fetch_assoc()) {
+	$newPersonIDS = $row["id"];
 }
 
-echo $newPersonID;
-
-$newVolunteer = "INSERT INTO volunteer (Personid, email, password, addr1, addr2, town, postcode, isValidated) VALUES ('$newPersonID', '$email' , '$password', '$addr1' , '$addr2' , '$town' ,  '$postcode' , 0 )";
+$newVolunteer = "INSERT INTO volunteer (Personid, email, password, addr1, addr2, town, postcode, isValidated) VALUES ('$newPersonIDS', '$email' , '$password', '$addr1' , '$addr2' , '$town' ,  '$postcode' , 0 )";
 
 if (mysqli_query($dbhandle, $newVolunteer)) {
 	echo "New record created successfully";
