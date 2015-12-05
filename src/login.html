@@ -13,23 +13,49 @@
 <body>
 <header>
     <nav class="light-blue" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Age Connect</a>
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Log In</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="login.html">Log In</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="register.html">Register</a></li>
                 <li><a href="#">Why?</a></li>
             </ul>
             <ul id="nav-mobile" class="side-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="login.html">Log In</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="register.html">Register</a></li>
                 <li><a href="#">Why?</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
     </nav>
 </header>
+
+<main>
+    <div class="section">
+        <div class="container">
+            <h1 class="header center purple-text lighten-1">Welcome Back!</h1>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <a class="waves-effect waves-light btn purple lighten-1" id="loginConfirm">Log In</a>
+        </div>
+    </div>
+</main>
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
