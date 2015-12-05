@@ -20,7 +20,7 @@
       <br><br>
       <h1 class="header center purple-text lighten-1">Profile Page</h1>
       <div class="row">
-	  	  <div class="col s6">
+	  	  <div class="col s12 m12 l6">
 	  <h5 class="header col s12 bold">Quick links</h5>
 	  <div class="collection">
         <a href="#!" class="collection-item"><i class="material-icons left">info_outline</i>Feedback and concerns</a>
@@ -30,7 +30,7 @@
         <a href="#!" class="collection-item"><i class="material-icons left">live_help</i>Help</a>
       </div>
 	  </div>
-		<div class="col s6">
+		<div class="col s12 m12 l6">
         <h5 class="header col s12 bold">Personal Profile: John Smith</h5>
 		<br>
 		<table>
@@ -63,34 +63,80 @@
 	  </div>
 
 	  </div>
-	  
-
+	 
+<h5 class="header col s12 bold">Address book</h5>	 
+<ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header">Jane</div>
+      <div class="collapsible-body">
+	  <!--<div class="container">-->
+			<span class="title"><i class="material-icons">phone</i>Scheduled call: every Wednesday 09:00-09:30</span>
+			<p>Matched since January 1, 2016<br></p>
+	  <!--</div>-->
+	  <div class="container">
+	  <div class="row">
+			<div class="col s12 m6 l3">
+				<a href="#"><i class="material-icons">call</i>Call now</a>
+			</div>
+			<div class="col s12 m6 l3">
+				<a href="#"><i class="material-icons">call_missed</i>Cancel a call</a>
+			</div>
+			<div class="col s12 m6 l3">
+				<a href="#"><i class="material-icons">schedule</i>Reschedule call</a>
+			</div>
+			<div class="col s12 m6 l3">
+				<a href="#"><i class="material-icons">report_problem</i>Flag missed call or concern</a>
+			</div>
+      </div>
+	  </div>
+	  </div>
+    </li>
+    <li>
+      <div class="collapsible-header">Anton</div>
+      <div class="collapsible-body">
+	  <!--<div class="container">-->
+			<span class="title"><i class="material-icons">phone</i>Scheduled call: every Wednesday 09:00-09:30</span>
+			<p>Matched since January 1, 2016<br></p>
+	  <!--</div>-->
+	  <div class="container">
+	  <div class="row">
+			<div class="col s12 m6 l3">
+				<a href="#"><i class="material-icons">call</i>Call now</a>
+			</div>
+			<div class="col s12 m6 l3">
+				<a href="#"><i class="material-icons">call_missed</i>Cancel a call</a>
+			</div>
+			<div class="col s12 m6 l3">
+				<a href="#"><i class="material-icons">schedule</i>Reschedule call</a>
+			</div>
+			<div class="col s12 m6 l3">
+				<a href="#"><i class="material-icons">report_problem</i>Flag missed call or concern</a>
+			</div>
+      </div>
+	  </div>
+	  </div>
+    </li>
+</ul>
+	
+	
 	  <div class="row">
 	  <h5 class="header col s12 bold">Application status</h5>
-		<br>
-		<p> The following powerpoint presentations are provided for training purposes, please download them all, and then confirm you have watched them using the button below.</p>
-      <!-- <div class="collection">
-        <a class="collection-item green-text">
-			<i class="tiny material-icons left">done</i>Contact details entered</a>
-        <a class="collection-item green-text"><i class="tiny material-icons left">done</i>Training completed</a>
-        <a class="collection-item red-text"><i class="tiny material-icons left">error</i>Checks validated</a>
-        <a class="collection-item red-text"><i class="tiny material-icons left">error</i>Interests added</a>
-        <a class="collection-item red-text"><i class="tiny material-icons left">error</i>Matched profiles!</a>
-      </div>-->
+		<br><br>
+
 	  
 	  <ul class="collapsible" data-collapsible="accordion">
     <li>
       <div class="collapsible-header green"><i class="material-icons">done</i>Contact details entered</div>
-      <div class="collapsible-body"><p>Initial details collected: Personal details, user log in, and contact details.</p></div>
+      <div class="collapsible-body green-text"><p>Initial details collected: Personal details, user log in, and contact details.</p></div>
     </li>
     <li>
       <div class="collapsible-header green"><i class="material-icons">done</i>Training completed</div>
-      <div class="collapsible-body"><p>Our mandatory training must be confirmed to have been read. 
+      <div class="collapsible-body green-text"><p>Our mandatory training must be confirmed to have been read. 
 	  Training information and downloads are available <a href="/training.php">here</a>.</p></div>
     </li>
     <li>
       <div class="collapsible-header green"><i class="material-icons">done</i>Interests added</div>
-      <div class="collapsible-body"><p>In order to match you with an appropriate partner we take details on your interests 
+      <div class="collapsible-body green-text"><p>In order to match you with an appropriate partner we take details on your interests 
 	  and topics of conversation that would help find an ideal match.</p></div>
     </li>
     <li>
@@ -105,12 +151,9 @@
 	  If you require any support that cannot be provided on this website, please contact Age UK Advice on 0800 169 2081</p></div>
     </li>
 		</ul>
-	  
 	  </div> 
+	  
   <br>
-   </div>
-   
-   <br>
    	  <h5 class="header col s12 bold">Notification Settings</h5>
 	  <form action="#">
     <p>
@@ -127,7 +170,11 @@
     </p>
 	<a class="waves-effect waves-light btn purple lighten-1" id="applyNow">Update notification settings</a>
 	</form>
-	  
+	
+	
+	
+	
+   </div>	  
 <br><br>
 </body>
 
