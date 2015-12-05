@@ -1,1 +1,1 @@
-INSERT INTO `User`(email, firstName, lastName, telNo, dob, street, number, city, postcode, password) VALUES (“testemail@hotmail.co.uk", “John”, “Smith”, "01234567890", 13/01/1990, "Test Street", 34, "Glasgow", "G1 4TN", "thisshouldencryptlater");
+INSERT INTO `User`(`email`, `firstName`, `lastName`, `telNo`, `dob`, `street`, `number`, `city`, `postcode`, `password`) VALUES ("mail@mail.com","Test","Ting","01234567890","1990-01-31","Test Street",14,"Glasgow","PA 12T","encryption")
