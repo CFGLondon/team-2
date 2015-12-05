@@ -19,7 +19,7 @@
 <main>
     <div class="container">
         <div class="row">
-            <form class="col s12">
+            <form class="col s12" action="php/UserRegister.php" method="post">
                 <div class="section">
                     <h5>Thank you for your interest</h5>
                     <div class="row">
@@ -53,6 +53,14 @@
                             <label for="last_name">Last Name</label>
                         </div>
                     </div>
+                    <div class="input-field col s12">
+					  <select name="gender">
+					    <option value="" disabled selected>Please state your gender</option>
+					    <option value="1">Male</option>
+					    <option value="2">Female</option>
+					  </select>
+					  <label for="gender">Gender</label>
+					</div>
                     <div class="row">
                         <div class="input-field col s6">
                             <input name="telephone" type="tel" class="validate">
@@ -68,15 +76,15 @@
                 <div class="section">
                     <h5>Address</h5>
                     <div class="row">
-                        <div class="input-field col s4">
-                            <input name="houseno" type="number" class="validate">
-                            <label for="houseno">House No.</label>
+                        <div class="input-field col s12">
+                            <input name="address1" type="text" class="validate">
+                            <label for="address1">Address 1</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input name="street" type="text" class="validate">
-                            <label for="street">Street</label>
+                            <input name="address2" type="text" class="validate">
+                            <label for="address2">Address 2</label>
                         </div>
                     </div>
                     <div class="row">
@@ -104,5 +112,10 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.min.js"></script>
 <script src="js/init.js"></script>
+<script>
+$(document).ready(function() {
+    $('select').material_select();
+});
+</script>
 </body>
 </html>

@@ -3,7 +3,8 @@
 <head>
     <title>Age Connect</title>
     <?php
-        include "php/include/head.php"
+        include "php/include/head.php";
+		include_once "php/UserLogin.php"
     ?>
 </head>
 <body>
