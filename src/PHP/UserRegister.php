@@ -15,3 +15,4 @@ $password = sha1($_POST["password"]);
 
 $sql = "INSERT INTO `User`(`email`, `firstName`, `lastName`, `telNo`, `dob`, `street`, `number`, `city`, `postcode`, `password`)
 VALUES (" . $email. $firstName .  $lastName . $telNo . $dob .$street . $number . $city . $postcode .$password .")";
+?>
