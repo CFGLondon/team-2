@@ -17,7 +17,7 @@
 
 <div class="container">
   <div class="row">
-    <form class="col s12">
+    <form class="col s12" action="php/UserRegister.php" method="post">
 	
 
   <div class="section">
@@ -40,13 +40,17 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input name="telephone" type="email" class="validate">
+          <input name="telephone" type="text" class="validate">
           <label for="telephone">Telephone</label>
         </div>
       </div>
 	 <div class="input-field col s12">
 		<input name="dob" type="date" class="datepicker">
         <label for="dob">Date of birth</label>
+	 </div>
+	 <div class="input-field col s12">
+		<input name="password" type="password">
+        <label for="password">Password</label>
 	 </div>
 	 </div> 
 	 
