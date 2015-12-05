@@ -1,0 +1,7 @@
+UPDATE Availability SET `available dates` = "" WHERE id = "";
+UPDATE DatesAvail SET  WHERE Personid = "" AND Availabilityid = "";
+UPDATE Dislike SET dislike = "" WHERE Personid = "" AND Hobbyid = "";
+UPDATE Hobby SET HobbyDesc = "" WHERE id = "";
+UPDATE Person SET title = "", fName = "", sName = "", gender = "", dob = "", phoneNo = "", isElderly = "", uncomfortable = "", personality = "" WHERE id = "";
+UPDATE PersonHobby SET  WHERE Hobbyid = "" AND Personid = "";
+UPDATE Volunteer SET email = "", password = "", addr1 = "", addr2 = "", town = "", postcode = "", isValidated = "", expOfElderly = "", GoalsSet = "", JoinReason = "" WHERE Personid = "";
