@@ -11,7 +11,7 @@ $street = $_POST["street"];
 $number = $_POST["number"];
 $city = $_POST["city"];
 $postcode = $_POST["postcode"];
-$password = $_POST["password"];
+$password = sha1($_POST["password"]);
 
-$sql = "INSERT INTO user (email,firstName,lastName,telNo,dob,street,number,city,postcode,password)
+$sql = "INSERT INTO `User`(`email`, `firstName`, `lastName`, `telNo`, `dob`, `street`, `number`, `city`, `postcode`, `password`)
 VALUES (" . $email. $firstName .  $lastName . $telNo . $dob .$street . $number . $city . $postcode .$password .")";
