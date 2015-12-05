@@ -1,29 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Age Connect</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/materialize.min.css" type="text/css">
+    <title>Register</title>
+    <?php
+    include "php/include/head.php"
+    ?>
 </head>
 <body>
 <header>
-    <nav class="deep-purple" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Application form</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">Navbar Link</a></li>
-            </ul>
-
-            <ul id="nav-mobile" class="side-nav">
-                <li><a href="#">Navbar Link</a></li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-        </div>
-    </nav>
+  <nav class="light-blue" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Age Connect</a>
+      <?php include "php/include/nav.php"?>
+    </div>
+  </nav>
 </header>
 
 <div class="container">
@@ -108,32 +97,6 @@
     </form>
   </div>
 
-  <footer class="page-footer deep-purple darken-4">
-    <div class="container">
-      <div class="row">
-        <div class="col s9">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We provide financial and non-financial support to our local and international partners to help them provide more and better services for older people in their local area, and to ensure that their voices are heard - both in Westminster and in their local communities. We continue to highlight the significant contributions made by older people and to improve the experience of Age UK’s volunteers who are so vital to our work.</p>
-
-
-        </div>
-        <div class="col s3">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="white-text" href="http://www.ageuk.org.uk/about-us/who-we-are-/">About us</a></li>
-            <li><a class="white-text" href="http://www.ageuk.org.uk/get-involved/make-a-donation/make-a-donation-/">Donate online</a></li>
-            <li><a class="white-text" href="http://www.ageuk.org.uk/">Age UK home</a></li>
-<!--            <li><a class="white-text" href="#!">Link 4</a></li>	-->
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
 </div>
 
 <!-- Compiled and minified JavaScript -->
