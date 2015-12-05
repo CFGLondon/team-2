@@ -1,6 +1,7 @@
 <?php
 
 require 'connect.php';
+require 'common.php';
 
 $email = $_POST["email"];
 $password = $_POST["password"];

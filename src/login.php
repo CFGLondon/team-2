@@ -19,24 +19,25 @@
     <div class="section">
         <div class="container">
             <h1 class="header center purple-text lighten-1">Welcome Back!</h1>
-            <div class="row">
-                <form class="col s12" method="post" action="php/common.php">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input name="email" type="email" class="validate">
-                            <label for="email">Email</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input name="password" type="password" class="validate">
-                            <label for="password">Password</label>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <a class="waves-effect waves-light btn purple lighten-1" id="loginConfirm">Log In</a>
+            <form class="col s12" method="post" action="php/UserLogin.php">
+	            <div class="row">
+	                <div class="col s12">
+	                    <div class="row">
+	                        <div class="input-field col s12">
+	                            <input name="email" type="email" class="validate">
+	                            <label for="email">Email</label>
+	                        </div>
+	                    </div>
+	                    <div class="row">
+	                        <div class="input-field col s12">
+	                            <input name="password" type="password" class="validate">
+	                            <label for="password">Password</label>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+            <button class="waves-effect waves-light btn purple lighten-1" id="loginConfirm" type="submit" name="action">Log In</button>
+            </form>
         </div>
     </div>
 </main>
