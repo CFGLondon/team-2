@@ -1,10 +1,10 @@
-CREATE TABLE Availability (id int(10) NOT NULL AUTO_INCREMENT, `available dates` varchar(255) NOT NULL, PRIMARY KEY (id));
+CREATE TABLE Availability (id int(10) NOT NULL AUTO_INCREMENT, `available dates` varchar(255) NOT NULL, PRIMARY KEY (id), INDEX (id));
 CREATE TABLE DatesAvail (Personid int(11) NOT NULL, Availabilityid int(10) NOT NULL, PRIMARY KEY (Personid, Availabilityid));
 CREATE TABLE Dislike (Personid int(11) NOT NULL, Hobbyid int(11) NOT NULL, dislike varchar(255) NOT NULL, PRIMARY KEY (Personid, Hobbyid));
-CREATE TABLE Hobby (id int(11) NOT NULL AUTO_INCREMENT, HobbyDesc varchar(255) NOT NULL, PRIMARY KEY (id));
-CREATE TABLE Person (id int(11) NOT NULL AUTO_INCREMENT, title varchar(255) NOT NULL, fName varchar(255) NOT NULL, sName varchar(255) NOT NULL, gender varchar(255) NOT NULL, dob date NOT NULL, phoneNo varchar(11) NOT NULL, isElderly int(1) NOT NULL, uncomfortable varchar(255), personality varchar(255), PRIMARY KEY (id));
+CREATE TABLE Hobby (id int(11) NOT NULL AUTO_INCREMENT, HobbyDesc varchar(255) NOT NULL, PRIMARY KEY (id), INDEX (id));
+CREATE TABLE Person (id int(11) NOT NULL AUTO_INCREMENT, title varchar(255) NOT NULL, fName varchar(255) NOT NULL, sName varchar(255) NOT NULL, gender varchar(255) NOT NULL, dob date NOT NULL, phoneNo varchar(11) NOT NULL, isElderly int(1) DEFAULT 0 NOT NULL, uncomfortable varchar(255), personality varchar(255), PRIMARY KEY (id), INDEX (id));
 CREATE TABLE PersonHobby (Hobbyid int(11) NOT NULL, Personid int(11) NOT NULL, PRIMARY KEY (Hobbyid, Personid));
-CREATE TABLE Volunteer (Personid int(11) NOT NULL, email int(11) NOT NULL UNIQUE, password varchar(255) NOT NULL, addr1 varchar(255) NOT NULL, addr2 varchar(255), town varchar(255) NOT NULL, postcode varchar(8) NOT NULL, isValidated int(1) NOT NULL, expOfElderly varchar(255) NOT NULL, GoalsSet int(1) NOT NULL, JoinReason varchar(255) NOT NULL, PRIMARY KEY (Personid));
+CREATE TABLE Volunteer (Personid int(11) NOT NULL, email int(11) NOT NULL UNIQUE, password varchar(255) NOT NULL, addr1 varchar(255) NOT NULL, addr2 varchar(255), town varchar(255) NOT NULL, postcode varchar(8) NOT NULL, isValidated int(1) DEFAULT 0 NOT NULL, expOfElderly varchar(255), GoalsSet int(1), JoinReason varchar(255), PRIMARY KEY (Personid));
 ALTER TABLE Volunteer ADD INDEX FKVolunteer977448 (Personid), ADD CONSTRAINT FKVolunteer977448 FOREIGN KEY (Personid) REFERENCES Person (id);
 ALTER TABLE PersonHobby ADD INDEX FKPersonHobb140982 (Personid), ADD CONSTRAINT FKPersonHobb140982 FOREIGN KEY (Personid) REFERENCES Person (id);
 ALTER TABLE PersonHobby ADD INDEX FKPersonHobb34378 (Hobbyid), ADD CONSTRAINT FKPersonHobb34378 FOREIGN KEY (Hobbyid) REFERENCES Hobby (id);
