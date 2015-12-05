@@ -1,13 +1,11 @@
 <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "test";
 
-function get_dbc() {
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "test";
-	$dbc = mysqli_connect($servername, $username, $password, $dbname);
-	if(!$dbc) die("Unable to connect to MySQL: " . mysqli_error($dbc));
-	return $dbc;
-}
-
+//connection to the database
+$dbhandle = mysqli_connect($hostname, $username, $password) or die("Unable to connect to MySQL");
+//select a database to work with
+$selected = mysqli_select_db($dbname, $dbhandle) or die("Could not select table");
 ?>
