@@ -106,7 +106,6 @@
         </div>
       </div>
   </div>
-
 	  
 	  <div class="row">
 			<button class="btn waves-effect waves-light" type="submit" name="action">Submit
