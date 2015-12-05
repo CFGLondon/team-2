@@ -24,28 +24,28 @@
     <h5>Personal Details</h5>
       <div class="row">
         <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate">
+          <input name="first_name" type="text" class="validate">
           <label for="first_name">First Name</label>
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
+          <input name="last_name" type="text" class="validate">
           <label for="last_name">Last Name</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
+          <input name="email" type="email" class="validate">
           <label for="email">Email</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="telephone" type="email" class="validate">
+          <input name="telephone" type="email" class="validate">
           <label for="telephone">Telephone</label>
         </div>
       </div>
 	 <div class="input-field col s12">
-		<input id="dob" type="date" class="datepicker">
+		<input name="dob" type="date" class="datepicker">
         <label for="dob">Date of birth</label>
 	 </div>
 	 </div> 
@@ -56,33 +56,33 @@
 	
 	<div class="row">
         <div class="input-field col s4">
-          <input id="houseno" type="text" class="validate">
+          <input name="houseno" type="text" class="validate">
           <label for="houseno">House No.</label>
         </div>
         <div class="input-field col s8">
-          <input id="street" type="text" class="validate">
+          <input name="street" type="text" class="validate">
           <label for="street">Street</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="address1" type="email" class="validate">
+          <input name="address1" type="email" class="validate">
           <label for="address1">Address line 1</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="address2" type="email" class="validate">
+          <input name="address2" type="email" class="validate">
           <label for="address2">Address line 2</label>
         </div>
       </div>
 	  <div class="row">
         <div class="input-field col s8">
-          <input id="town" type="text" class="validate">
+          <input name="town" type="text" class="validate">
           <label for="town">Town</label>
         </div>
         <div class="input-field col s4">
-          <input id="postcode" type="text" class="validate">
+          <input name="postcode" type="text" class="validate">
           <label for="postcode">Postcode</label>
         </div>
       </div>
