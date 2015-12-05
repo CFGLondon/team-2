@@ -1,11 +1,11 @@
 <?php
-require 'connect.php';
+require_once 'connect.php';
 
 function executeSELECT($query) {
-	$conn = get_dbc();
-	$result = $conn->query( $query );
+	global $dbhandle;
+	$result = $dbhandle->query( $query );
 	
-	$num_rows = $conn->field_count;
+	$num_rows = $dbhandle->field_count;
 	
 	if ($num_rows > 0) {
 		return $result;
